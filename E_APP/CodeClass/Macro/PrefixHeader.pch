@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  Faith in life
+//
+//  Created by allan on 16/3/15.
+//  Copyright © 2016年 allan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "APPHeader.h"
+#import "APIHeader.h"
+#import "INHeader.h"
+#import "ConstantHeader.h"
+#import "ENUMHeader.h"
+#import "IPhoneHeader.h"
+#import "UIHeader.h"
+#import "PathHeader.h"
+#import "CZHeader.h"
+
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#define AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES
+
+#endif
+
+#endif
+
+/**
+ *  打印信息
+ */
+#ifdef DEBUG
+
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
+#else
+
+#define NSLog(...)
+
+#endif
