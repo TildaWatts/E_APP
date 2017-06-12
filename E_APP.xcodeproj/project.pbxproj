@@ -57,6 +57,10 @@
 		F7BAD8A01EEE66EC00E847F4 /* JSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8981EEE66EC00E847F4 /* JSUtil.m */; };
 		F7BAD8A11EEE66EC00E847F4 /* WebViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD89A1EEE66EC00E847F4 /* WebViewUtil.m */; };
 		F7BAD8A21EEE66EC00E847F4 /* XUri.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD89C1EEE66EC00E847F4 /* XUri.m */; };
+		F7BAD8C51EEE7E8000E847F4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8BB1EEE7E8000E847F4 /* FirstViewController.m */; };
+		F7BAD8C61EEE7E8000E847F4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8BE1EEE7E8000E847F4 /* SecondViewController.m */; };
+		F7BAD8C71EEE7E8000E847F4 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8C11EEE7E8000E847F4 /* ThirdViewController.m */; };
+		F7BAD8C81EEE7E8000E847F4 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8C41EEE7E8000E847F4 /* FourthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +178,14 @@
 		F7BAD89A1EEE66EC00E847F4 /* WebViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewUtil.m; sourceTree = "<group>"; };
 		F7BAD89B1EEE66EC00E847F4 /* XUri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUri.h; sourceTree = "<group>"; };
 		F7BAD89C1EEE66EC00E847F4 /* XUri.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUri.m; sourceTree = "<group>"; };
+		F7BAD8BA1EEE7E8000E847F4 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F7BAD8BB1EEE7E8000E847F4 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F7BAD8BD1EEE7E8000E847F4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F7BAD8BE1EEE7E8000E847F4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F7BAD8C01EEE7E8000E847F4 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		F7BAD8C11EEE7E8000E847F4 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		F7BAD8C31EEE7E8000E847F4 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		F7BAD8C41EEE7E8000E847F4 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -474,6 +486,10 @@
 			children = (
 				F7BAD87C1EEE416300E847F4 /* MainController */,
 				F7BAD8661EEE416300E847F4 /* LinkController */,
+				F7BAD8B91EEE7E8000E847F4 /* FirstTabController */,
+				F7BAD8BC1EEE7E8000E847F4 /* SecondTabController */,
+				F7BAD8BF1EEE7E8000E847F4 /* ThirdTabController */,
+				F7BAD8C21EEE7E8000E847F4 /* FourthTabController */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -538,6 +554,42 @@
 				F7BAD89C1EEE66EC00E847F4 /* XUri.m */,
 			);
 			path = webUtil;
+			sourceTree = "<group>";
+		};
+		F7BAD8B91EEE7E8000E847F4 /* FirstTabController */ = {
+			isa = PBXGroup;
+			children = (
+				F7BAD8BA1EEE7E8000E847F4 /* FirstViewController.h */,
+				F7BAD8BB1EEE7E8000E847F4 /* FirstViewController.m */,
+			);
+			path = FirstTabController;
+			sourceTree = "<group>";
+		};
+		F7BAD8BC1EEE7E8000E847F4 /* SecondTabController */ = {
+			isa = PBXGroup;
+			children = (
+				F7BAD8BD1EEE7E8000E847F4 /* SecondViewController.h */,
+				F7BAD8BE1EEE7E8000E847F4 /* SecondViewController.m */,
+			);
+			path = SecondTabController;
+			sourceTree = "<group>";
+		};
+		F7BAD8BF1EEE7E8000E847F4 /* ThirdTabController */ = {
+			isa = PBXGroup;
+			children = (
+				F7BAD8C01EEE7E8000E847F4 /* ThirdViewController.h */,
+				F7BAD8C11EEE7E8000E847F4 /* ThirdViewController.m */,
+			);
+			path = ThirdTabController;
+			sourceTree = "<group>";
+		};
+		F7BAD8C21EEE7E8000E847F4 /* FourthTabController */ = {
+			isa = PBXGroup;
+			children = (
+				F7BAD8C31EEE7E8000E847F4 /* FourthViewController.h */,
+				F7BAD8C41EEE7E8000E847F4 /* FourthViewController.m */,
+			);
+			path = FourthTabController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -668,7 +720,9 @@
 				F7BAD8371EEE3DE000E847F4 /* AppDelegate.m in Sources */,
 				F7BAD8561EEE3DE000E847F4 /* XDRefreshGifHeader.m in Sources */,
 				F7BAD89E1EEE66EC00E847F4 /* LocalVcBridge.m in Sources */,
+				F7BAD8C71EEE7E8000E847F4 /* ThirdViewController.m in Sources */,
 				F7BAD8451EEE3DE000E847F4 /* AppDev.m in Sources */,
+				F7BAD8C51EEE7E8000E847F4 /* FirstViewController.m in Sources */,
 				F7BAD8581EEE3DE000E847F4 /* NSString+URL.m in Sources */,
 				F7BAD85B1EEE3DE000E847F4 /* BatteryMonitor.m in Sources */,
 				F7BAD84F1EEE3DE000E847F4 /* UserEngine.m in Sources */,
@@ -678,8 +732,10 @@
 				F7BAD85E1EEE3DE000E847F4 /* SettingInfo.m in Sources */,
 				F7BAD8601EEE3DE000E847F4 /* ThreadHelper.m in Sources */,
 				F7BAD85A1EEE3DE000E847F4 /* UIView+STLayout.m in Sources */,
+				F7BAD8C61EEE7E8000E847F4 /* SecondViewController.m in Sources */,
 				F7BAD85F1EEE3DE000E847F4 /* SystemHelper.m in Sources */,
 				F7BAD8531EEE3DE000E847F4 /* XResponse.m in Sources */,
+				F7BAD8C81EEE7E8000E847F4 /* FourthViewController.m in Sources */,
 				F7BAD8541EEE3DE000E847F4 /* Event.m in Sources */,
 				F7BAD84A1EEE3DE000E847F4 /* CacheModel.m in Sources */,
 				F7BAD8A01EEE66EC00E847F4 /* JSUtil.m in Sources */,
