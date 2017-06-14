@@ -10,7 +10,7 @@
 #define AppDev_h
 
 #define ENBALE_LOG
-
+#import <Foundation/Foundation.h>
 @interface  AppDev : NSObject
 
 + (NSURLSessionConfiguration *) setProxyWithConfig;

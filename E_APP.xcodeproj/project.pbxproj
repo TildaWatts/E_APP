@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8EBDD0F4404D69D3A6758999 /* Pods_E_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566BDAF783B727F5384DCBD3 /* Pods_E_APP.framework */; };
+		F72837971EEFB51B00D04F65 /* TabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F72837961EEFB51B00D04F65 /* TabBarControllerConfig.m */; };
 		F7BAD6FD1EEE365F00E847F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD6FC1EEE365F00E847F4 /* main.m */; };
 		F7BAD7081EEE365F00E847F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BAD7071EEE365F00E847F4 /* Assets.xcassets */; };
 		F7BAD70B1EEE365F00E847F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BAD7091EEE365F00E847F4 /* LaunchScreen.storyboard */; };
@@ -61,12 +62,15 @@
 		F7BAD8C61EEE7E8000E847F4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8BE1EEE7E8000E847F4 /* SecondViewController.m */; };
 		F7BAD8C71EEE7E8000E847F4 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8C11EEE7E8000E847F4 /* ThirdViewController.m */; };
 		F7BAD8C81EEE7E8000E847F4 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8C41EEE7E8000E847F4 /* FourthViewController.m */; };
+		F7BAD8CE1EEE9A9900E847F4 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8CD1EEE9A9900E847F4 /* BaseNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		566BDAF783B727F5384DCBD3 /* Pods_E_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A688E3A5BF4273C2ACDC4B6 /* Pods-E_APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-E_APP/Pods-E_APP.release.xcconfig"; sourceTree = "<group>"; };
 		EEE57A665AE4267083E66CD0 /* Pods-E_APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E_APP/Pods-E_APP.debug.xcconfig"; sourceTree = "<group>"; };
+		F72837951EEFB51B00D04F65 /* TabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConfig.h; sourceTree = "<group>"; };
+		F72837961EEFB51B00D04F65 /* TabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarControllerConfig.m; sourceTree = "<group>"; };
 		F7BAD6F81EEE365F00E847F4 /* E_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BAD6FC1EEE365F00E847F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7BAD7071EEE365F00E847F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 		F7BAD8C11EEE7E8000E847F4 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		F7BAD8C31EEE7E8000E847F4 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		F7BAD8C41EEE7E8000E847F4 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		F7BAD8CC1EEE9A9900E847F4 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		F7BAD8CD1EEE9A9900E847F4 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -524,6 +530,10 @@
 			children = (
 				F7BAD88A1EEE41A600E847F4 /* SuperViewController.h */,
 				F7BAD88B1EEE41A600E847F4 /* SuperViewController.m */,
+				F72837951EEFB51B00D04F65 /* TabBarControllerConfig.h */,
+				F72837961EEFB51B00D04F65 /* TabBarControllerConfig.m */,
+				F7BAD8CC1EEE9A9900E847F4 /* BaseNavigationController.h */,
+				F7BAD8CD1EEE9A9900E847F4 /* BaseNavigationController.m */,
 				F7BAD87D1EEE416300E847F4 /* WKWebViewController.h */,
 				F7BAD87E1EEE416300E847F4 /* WKWebViewController.m */,
 			);
@@ -626,7 +636,7 @@
 				TargetAttributes = {
 					F7BAD6F71EEE365F00E847F4 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = MK2DJW4SK4;
+						DevelopmentTeam = SX2JL8WU5A;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -728,6 +738,7 @@
 				F7BAD84F1EEE3DE000E847F4 /* UserEngine.m in Sources */,
 				F7BAD8511EEE3DE000E847F4 /* XEngine.m in Sources */,
 				F7BAD85C1EEE3DE000E847F4 /* NetworkMonitor.m in Sources */,
+				F7BAD8CE1EEE9A9900E847F4 /* BaseNavigationController.m in Sources */,
 				F7BAD8551EEE3DE000E847F4 /* EventCenter.m in Sources */,
 				F7BAD85E1EEE3DE000E847F4 /* SettingInfo.m in Sources */,
 				F7BAD8601EEE3DE000E847F4 /* ThreadHelper.m in Sources */,
@@ -743,6 +754,7 @@
 				F7BAD8591EEE3DE000E847F4 /* UIView+CWExtension.m in Sources */,
 				F7BAD8631EEE3DE000E847F4 /* KeyChainStore.m in Sources */,
 				F7BAD8481EEE3DE000E847F4 /* Global.m in Sources */,
+				F72837971EEFB51B00D04F65 /* TabBarControllerConfig.m in Sources */,
 				F7BAD87F1EEE416300E847F4 /* CCookie.m in Sources */,
 				F7BAD8891EEE416300E847F4 /* WKWebViewController.m in Sources */,
 				F7BAD8521EEE3DE000E847F4 /* XRequest.m in Sources */,
@@ -878,7 +890,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = MK2DJW4SK4;
+				DEVELOPMENT_TEAM = SX2JL8WU5A;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/E_APP/CodeClass/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = E_APP/Info.plist;
@@ -895,7 +907,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = MK2DJW4SK4;
+				DEVELOPMENT_TEAM = SX2JL8WU5A;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/E_APP/CodeClass/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = E_APP/Info.plist;

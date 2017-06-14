@@ -82,9 +82,8 @@
 
 #import <YYModel/YYModel.h>
 
-#import <CYLTabBarController/CYLTabBarController.h>
-
-
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 // 用户相关类
 #import "ConstantHeader.h"
