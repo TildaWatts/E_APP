@@ -49,7 +49,7 @@
 
 #import "XResponse.h"
 
-
+#import "ESocketManager.h"
 //  ***  分类  *** //
 
 //缓存图片
@@ -81,6 +81,8 @@
 #import <TMCache/TMCache.h>
 
 #import <YYModel/YYModel.h>
+
+#import <SocketRocket/SRWebSocket.h>
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>

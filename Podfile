@@ -24,5 +24,6 @@ pod 'AMapSearch' #搜索服务SDK
 pod 'AMapFoundation', '~> 1.3.4'
 pod 'AMapLocation'  #定位SDK
 pod 'TMCache'
+pod 'SocketRocket'
 
 end

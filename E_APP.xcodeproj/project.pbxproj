@@ -63,6 +63,11 @@
 		F7BAD8C71EEE7E8000E847F4 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8C11EEE7E8000E847F4 /* ThirdViewController.m */; };
 		F7BAD8C81EEE7E8000E847F4 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8C41EEE7E8000E847F4 /* FourthViewController.m */; };
 		F7BAD8CE1EEE9A9900E847F4 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8CD1EEE9A9900E847F4 /* BaseNavigationController.m */; };
+		F7D8F4071EF26D3300D635F5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D8F4061EF26D3300D635F5 /* CFNetwork.framework */; };
+		F7D8F4091EF26D3A00D635F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D8F4081EF26D3A00D635F5 /* Foundation.framework */; };
+		F7D8F40B1EF26D4100D635F5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D8F40A1EF26D4100D635F5 /* Security.framework */; };
+		F7D8F40D1EF26D4E00D635F5 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D8F40C1EF26D4E00D635F5 /* libicucore.tbd */; };
+		F7D8F4181EF2938300D635F5 /* ESocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8F4171EF2938300D635F5 /* ESocketManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +197,12 @@
 		F7BAD8C41EEE7E8000E847F4 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		F7BAD8CC1EEE9A9900E847F4 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		F7BAD8CD1EEE9A9900E847F4 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		F7D8F4061EF26D3300D635F5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F7D8F4081EF26D3A00D635F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F7D8F40A1EF26D4100D635F5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F7D8F40C1EF26D4E00D635F5 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		F7D8F4161EF2938300D635F5 /* ESocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESocketManager.h; sourceTree = "<group>"; };
+		F7D8F4171EF2938300D635F5 /* ESocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESocketManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +210,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D8F40D1EF26D4E00D635F5 /* libicucore.tbd in Frameworks */,
+				F7D8F40B1EF26D4100D635F5 /* Security.framework in Frameworks */,
+				F7D8F4091EF26D3A00D635F5 /* Foundation.framework in Frameworks */,
+				F7D8F4071EF26D3300D635F5 /* CFNetwork.framework in Frameworks */,
 				8EBDD0F4404D69D3A6758999 /* Pods_E_APP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +233,10 @@
 		40637063550A6C805DF1A75B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7D8F40C1EF26D4E00D635F5 /* libicucore.tbd */,
+				F7D8F40A1EF26D4100D635F5 /* Security.framework */,
+				F7D8F4081EF26D3A00D635F5 /* Foundation.framework */,
+				F7D8F4061EF26D3300D635F5 /* CFNetwork.framework */,
 				566BDAF783B727F5384DCBD3 /* Pods_E_APP.framework */,
 			);
 			name = Frameworks;
@@ -475,6 +494,8 @@
 		F7BAD82E1EEE3DE000E847F4 /* XUtils */ = {
 			isa = PBXGroup;
 			children = (
+				F7D8F4161EF2938300D635F5 /* ESocketManager.h */,
+				F7D8F4171EF2938300D635F5 /* ESocketManager.m */,
 				F7BAD82F1EEE3DE000E847F4 /* CommonUtils.h */,
 				F7BAD8301EEE3DE000E847F4 /* CommonUtils.m */,
 				F7BAD8311EEE3DE000E847F4 /* FileManagerUtils.h */,
@@ -772,6 +793,7 @@
 				F7BAD8641EEE3DE000E847F4 /* UUID.m in Sources */,
 				F7BAD84B1EEE3DE000E847F4 /* DataTool.m in Sources */,
 				F7BAD8811EEE416300E847F4 /* CURLInput.m in Sources */,
+				F7D8F4181EF2938300D635F5 /* ESocketManager.m in Sources */,
 				F7BAD8621EEE3DE000E847F4 /* FileManagerUtils.m in Sources */,
 				F7BAD85D1EEE3DE000E847F4 /* XHead.m in Sources */,
 				F7BAD84C1EEE3DE000E847F4 /* XDCache.m in Sources */,

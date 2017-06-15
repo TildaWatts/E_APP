@@ -16,22 +16,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor orangeColor];
+    
+    self.title = @"行情";
+    
+    /**
+     *
+     *  开启连接
+     */
+    NSString *url = @"wss://api.chbtc.com:9999/websocket";
+    [[ESocketManager shareManager] e_open:url connect:^{
+        NSLog(@"成功连接");
+    } receive:^(id message, ESocketReceiveType type) {
+        if (type == ESocketReceiveTypeForMessage) {
+            NSLog(@"接收 类型1--%@",message);
+        }
+        else if (type == ESocketReceiveTypeForPong){
+            NSLog(@"接收 类型2--%@",message);
+        }
+    } failure:^(NSError *error) {
+        NSLog(@"连接失败");
+    }];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [[ESocketManager shareManager] e_close:^(NSInteger code, NSString *reason, BOOL wasClean) {
+        NSLog(@"code = %zd,reason = %@",code,reason);
+    }];
 }
-*/
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:@{@"event":@"addChannel",@"channel":@"btc_cny_ticker"} options:NSJSONWritingPrettyPrinted error:nil];
+    
+    [[ESocketManager shareManager] e_send:jsonData];
+}
 
 @end
