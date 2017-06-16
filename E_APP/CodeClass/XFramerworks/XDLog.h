@@ -8,6 +8,7 @@
 
 #import "Global.h"
 #import "AppDev.h"
+#import <Foundation/Foundation.h>
 
 #ifndef XLog_h
 #define XLog_h

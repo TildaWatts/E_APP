@@ -19,6 +19,8 @@
 //#define Usuites  @"http://appmgr.jwoquxoc.com/frontApi/getAboutUs"
 #define Usuite  @"http://api.jisuapi.com/zidian/word"
 #define Usuites  @"http://api.jisuapi.com/zidian/word"
+#define SocketUsuites @"wss://api.chbtc.com:9999/websocket"
+
 
 #endif
 

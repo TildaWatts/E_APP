@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8EBDD0F4404D69D3A6758999 /* Pods_E_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566BDAF783B727F5384DCBD3 /* Pods_E_APP.framework */; };
+		F71A57ED1EF3B47900450CC2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57EC1EF3B47900450CC2 /* FirstViewController.m */; };
+		F71A57F21EF3B4A100450CC2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57F11EF3B4A100450CC2 /* SecondViewController.m */; };
+		F71A57F71EF3B4C600450CC2 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57F61EF3B4C600450CC2 /* ThirdViewController.m */; };
+		F71A57FC1EF3B4E800450CC2 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57FA1EF3B4E800450CC2 /* FourthViewController.m */; };
+		F71A58001EF3B62500450CC2 /* MarketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57FF1EF3B62500450CC2 /* MarketEngine.m */; };
+		F71A58031EF3B63D00450CC2 /* MarketItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A58021EF3B63D00450CC2 /* MarketItem.m */; };
+		F71A58061EF3B8E500450CC2 /* XSocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A58051EF3B8E500450CC2 /* XSocketEngine.m */; };
+		F71A580A1EF3D65700450CC2 /* MarketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A58081EF3D65700450CC2 /* MarketTableViewCell.m */; };
+		F71A580B1EF3D65700450CC2 /* MarketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71A58091EF3D65700450CC2 /* MarketTableViewCell.xib */; };
 		F72837971EEFB51B00D04F65 /* TabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F72837961EEFB51B00D04F65 /* TabBarControllerConfig.m */; };
 		F7BAD6FD1EEE365F00E847F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD6FC1EEE365F00E847F4 /* main.m */; };
 		F7BAD7081EEE365F00E847F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BAD7071EEE365F00E847F4 /* Assets.xcassets */; };
@@ -58,10 +67,6 @@
 		F7BAD8A01EEE66EC00E847F4 /* JSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8981EEE66EC00E847F4 /* JSUtil.m */; };
 		F7BAD8A11EEE66EC00E847F4 /* WebViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD89A1EEE66EC00E847F4 /* WebViewUtil.m */; };
 		F7BAD8A21EEE66EC00E847F4 /* XUri.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD89C1EEE66EC00E847F4 /* XUri.m */; };
-		F7BAD8C51EEE7E8000E847F4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8BB1EEE7E8000E847F4 /* FirstViewController.m */; };
-		F7BAD8C61EEE7E8000E847F4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8BE1EEE7E8000E847F4 /* SecondViewController.m */; };
-		F7BAD8C71EEE7E8000E847F4 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8C11EEE7E8000E847F4 /* ThirdViewController.m */; };
-		F7BAD8C81EEE7E8000E847F4 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8C41EEE7E8000E847F4 /* FourthViewController.m */; };
 		F7BAD8CE1EEE9A9900E847F4 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD8CD1EEE9A9900E847F4 /* BaseNavigationController.m */; };
 		F7D8F4071EF26D3300D635F5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D8F4061EF26D3300D635F5 /* CFNetwork.framework */; };
 		F7D8F4091EF26D3A00D635F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D8F4081EF26D3A00D635F5 /* Foundation.framework */; };
@@ -74,6 +79,23 @@
 		566BDAF783B727F5384DCBD3 /* Pods_E_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A688E3A5BF4273C2ACDC4B6 /* Pods-E_APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-E_APP/Pods-E_APP.release.xcconfig"; sourceTree = "<group>"; };
 		EEE57A665AE4267083E66CD0 /* Pods-E_APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E_APP/Pods-E_APP.debug.xcconfig"; sourceTree = "<group>"; };
+		F71A57EB1EF3B47900450CC2 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F71A57EC1EF3B47900450CC2 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F71A57F01EF3B4A100450CC2 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F71A57F11EF3B4A100450CC2 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F71A57F51EF3B4C600450CC2 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		F71A57F61EF3B4C600450CC2 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		F71A57F91EF3B4E800450CC2 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		F71A57FA1EF3B4E800450CC2 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		F71A57FE1EF3B62500450CC2 /* MarketEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketEngine.h; sourceTree = "<group>"; };
+		F71A57FF1EF3B62500450CC2 /* MarketEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketEngine.m; sourceTree = "<group>"; };
+		F71A58011EF3B63D00450CC2 /* MarketItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketItem.h; sourceTree = "<group>"; };
+		F71A58021EF3B63D00450CC2 /* MarketItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketItem.m; sourceTree = "<group>"; };
+		F71A58041EF3B8E500450CC2 /* XSocketEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSocketEngine.h; sourceTree = "<group>"; };
+		F71A58051EF3B8E500450CC2 /* XSocketEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSocketEngine.m; sourceTree = "<group>"; };
+		F71A58071EF3D65700450CC2 /* MarketTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketTableViewCell.h; sourceTree = "<group>"; };
+		F71A58081EF3D65700450CC2 /* MarketTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketTableViewCell.m; sourceTree = "<group>"; };
+		F71A58091EF3D65700450CC2 /* MarketTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketTableViewCell.xib; sourceTree = "<group>"; };
 		F72837951EEFB51B00D04F65 /* TabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConfig.h; sourceTree = "<group>"; };
 		F72837961EEFB51B00D04F65 /* TabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarControllerConfig.m; sourceTree = "<group>"; };
 		F7BAD6F81EEE365F00E847F4 /* E_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,14 +209,6 @@
 		F7BAD89A1EEE66EC00E847F4 /* WebViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewUtil.m; sourceTree = "<group>"; };
 		F7BAD89B1EEE66EC00E847F4 /* XUri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XUri.h; sourceTree = "<group>"; };
 		F7BAD89C1EEE66EC00E847F4 /* XUri.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XUri.m; sourceTree = "<group>"; };
-		F7BAD8BA1EEE7E8000E847F4 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F7BAD8BB1EEE7E8000E847F4 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		F7BAD8BD1EEE7E8000E847F4 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F7BAD8BE1EEE7E8000E847F4 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		F7BAD8C01EEE7E8000E847F4 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
-		F7BAD8C11EEE7E8000E847F4 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		F7BAD8C31EEE7E8000E847F4 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
-		F7BAD8C41EEE7E8000E847F4 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		F7BAD8CC1EEE9A9900E847F4 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		F7BAD8CD1EEE9A9900E847F4 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		F7D8F4061EF26D3300D635F5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -240,6 +254,95 @@
 				566BDAF783B727F5384DCBD3 /* Pods_E_APP.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F71A57E91EF3B45D00450CC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F71A58071EF3D65700450CC2 /* MarketTableViewCell.h */,
+				F71A58081EF3D65700450CC2 /* MarketTableViewCell.m */,
+				F71A58091EF3D65700450CC2 /* MarketTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F71A57EA1EF3B47900450CC2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F71A57EB1EF3B47900450CC2 /* FirstViewController.h */,
+				F71A57EC1EF3B47900450CC2 /* FirstViewController.m */,
+				F71A57FE1EF3B62500450CC2 /* MarketEngine.h */,
+				F71A57FF1EF3B62500450CC2 /* MarketEngine.m */,
+				F71A58011EF3B63D00450CC2 /* MarketItem.h */,
+				F71A58021EF3B63D00450CC2 /* MarketItem.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F71A57EE1EF3B4A100450CC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F71A57EF1EF3B4A100450CC2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F71A57F01EF3B4A100450CC2 /* SecondViewController.h */,
+				F71A57F11EF3B4A100450CC2 /* SecondViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F71A57F31EF3B4C600450CC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F71A57F41EF3B4C600450CC2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F71A57F51EF3B4C600450CC2 /* ThirdViewController.h */,
+				F71A57F61EF3B4C600450CC2 /* ThirdViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F71A57F81EF3B4E800450CC2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F71A57F91EF3B4E800450CC2 /* FourthViewController.h */,
+				F71A57FA1EF3B4E800450CC2 /* FourthViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F71A57FB1EF3B4E800450CC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F71A57FD1EF3B54500450CC2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F7BAD7F71EEE3DE000E847F4 /* XDSetting.h */,
+				F7BAD7F81EEE3DE000E847F4 /* XDSetting.m */,
+				F7BAD7E31EEE3DE000E847F4 /* AppDev.h */,
+				F7BAD7E41EEE3DE000E847F4 /* AppDev.m */,
+				F7BAD7E51EEE3DE000E847F4 /* CodeZipper.h */,
+				F7BAD7E61EEE3DE000E847F4 /* CodeZipper.m */,
+				F7BAD7E71EEE3DE000E847F4 /* DataCenter.h */,
+				F7BAD7E81EEE3DE000E847F4 /* DataCenter.m */,
+				F7BAD7E91EEE3DE000E847F4 /* Global.h */,
+				F7BAD7EA1EEE3DE000E847F4 /* Global.m */,
+				F7BAD7F61EEE3DE000E847F4 /* XDLog.h */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 		F7BAD6EF1EEE365F00E847F4 = {
@@ -313,25 +416,15 @@
 		F7BAD7E21EEE3DE000E847F4 /* XFramerworks */ = {
 			isa = PBXGroup;
 			children = (
-				F7BAD7E31EEE3DE000E847F4 /* AppDev.h */,
-				F7BAD7E41EEE3DE000E847F4 /* AppDev.m */,
-				F7BAD7E51EEE3DE000E847F4 /* CodeZipper.h */,
-				F7BAD7E61EEE3DE000E847F4 /* CodeZipper.m */,
-				F7BAD7E71EEE3DE000E847F4 /* DataCenter.h */,
-				F7BAD7E81EEE3DE000E847F4 /* DataCenter.m */,
-				F7BAD7E91EEE3DE000E847F4 /* Global.h */,
-				F7BAD7EA1EEE3DE000E847F4 /* Global.m */,
+				F7BAD7F91EEE3DE000E847F4 /* XEngine */,
+				F7BAD8261EEE3DE000E847F4 /* XStruct */,
+				F71A57FD1EF3B54500450CC2 /* Other */,
 				F7BAD7EB1EEE3DE000E847F4 /* TheThird */,
 				F7BAD7EF1EEE3DE000E847F4 /* XDB */,
-				F7BAD7F61EEE3DE000E847F4 /* XDLog.h */,
-				F7BAD7F71EEE3DE000E847F4 /* XDSetting.h */,
-				F7BAD7F81EEE3DE000E847F4 /* XDSetting.m */,
-				F7BAD7F91EEE3DE000E847F4 /* XEngine */,
 				F7BAD8071EEE3DE000E847F4 /* XEvent */,
 				F7BAD80E1EEE3DE000E847F4 /* XExtension */,
 				F7BAD81C1EEE3DE000E847F4 /* XManager */,
 				F7BAD8211EEE3DE000E847F4 /* XProtocol */,
-				F7BAD8261EEE3DE000E847F4 /* XStruct */,
 				F7BAD8291EEE3DE000E847F4 /* XSystem */,
 				F7BAD82E1EEE3DE000E847F4 /* XUtils */,
 			);
@@ -380,6 +473,8 @@
 				F7BAD8041EEE3DE000E847F4 /* XRequest.m */,
 				F7BAD8051EEE3DE000E847F4 /* XResponse.h */,
 				F7BAD8061EEE3DE000E847F4 /* XResponse.m */,
+				F71A58041EF3B8E500450CC2 /* XSocketEngine.h */,
+				F71A58051EF3B8E500450CC2 /* XSocketEngine.m */,
 			);
 			path = XEngine;
 			sourceTree = "<group>";
@@ -590,8 +685,8 @@
 		F7BAD8B91EEE7E8000E847F4 /* FirstTabController */ = {
 			isa = PBXGroup;
 			children = (
-				F7BAD8BA1EEE7E8000E847F4 /* FirstViewController.h */,
-				F7BAD8BB1EEE7E8000E847F4 /* FirstViewController.m */,
+				F71A57EA1EF3B47900450CC2 /* Controller */,
+				F71A57E91EF3B45D00450CC2 /* View */,
 			);
 			path = FirstTabController;
 			sourceTree = "<group>";
@@ -599,8 +694,8 @@
 		F7BAD8BC1EEE7E8000E847F4 /* SecondTabController */ = {
 			isa = PBXGroup;
 			children = (
-				F7BAD8BD1EEE7E8000E847F4 /* SecondViewController.h */,
-				F7BAD8BE1EEE7E8000E847F4 /* SecondViewController.m */,
+				F71A57EF1EF3B4A100450CC2 /* Controller */,
+				F71A57EE1EF3B4A100450CC2 /* View */,
 			);
 			path = SecondTabController;
 			sourceTree = "<group>";
@@ -608,8 +703,8 @@
 		F7BAD8BF1EEE7E8000E847F4 /* ThirdTabController */ = {
 			isa = PBXGroup;
 			children = (
-				F7BAD8C01EEE7E8000E847F4 /* ThirdViewController.h */,
-				F7BAD8C11EEE7E8000E847F4 /* ThirdViewController.m */,
+				F71A57F31EF3B4C600450CC2 /* View */,
+				F71A57F41EF3B4C600450CC2 /* Controller */,
 			);
 			path = ThirdTabController;
 			sourceTree = "<group>";
@@ -617,8 +712,8 @@
 		F7BAD8C21EEE7E8000E847F4 /* FourthTabController */ = {
 			isa = PBXGroup;
 			children = (
-				F7BAD8C31EEE7E8000E847F4 /* FourthViewController.h */,
-				F7BAD8C41EEE7E8000E847F4 /* FourthViewController.m */,
+				F71A57F81EF3B4E800450CC2 /* Controller */,
+				F71A57FB1EF3B4E800450CC2 /* View */,
 			);
 			path = FourthTabController;
 			sourceTree = "<group>";
@@ -685,6 +780,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71A580B1EF3D65700450CC2 /* MarketTableViewCell.xib in Resources */,
 				F7BAD70B1EEE365F00E847F4 /* LaunchScreen.storyboard in Resources */,
 				F7BAD7081EEE365F00E847F4 /* Assets.xcassets in Resources */,
 			);
@@ -747,42 +843,46 @@
 			files = (
 				F7BAD8801EEE416300E847F4 /* CURLEngine.m in Sources */,
 				F7BAD84E1EEE3DE000E847F4 /* FileEngine.m in Sources */,
+				F71A58031EF3B63D00450CC2 /* MarketItem.m in Sources */,
 				F7BAD8501EEE3DE000E847F4 /* SettingEngine.m in Sources */,
 				F7BAD8371EEE3DE000E847F4 /* AppDelegate.m in Sources */,
 				F7BAD8561EEE3DE000E847F4 /* XDRefreshGifHeader.m in Sources */,
 				F7BAD89E1EEE66EC00E847F4 /* LocalVcBridge.m in Sources */,
-				F7BAD8C71EEE7E8000E847F4 /* ThirdViewController.m in Sources */,
 				F7BAD8451EEE3DE000E847F4 /* AppDev.m in Sources */,
-				F7BAD8C51EEE7E8000E847F4 /* FirstViewController.m in Sources */,
 				F7BAD8581EEE3DE000E847F4 /* NSString+URL.m in Sources */,
 				F7BAD85B1EEE3DE000E847F4 /* BatteryMonitor.m in Sources */,
 				F7BAD84F1EEE3DE000E847F4 /* UserEngine.m in Sources */,
 				F7BAD8511EEE3DE000E847F4 /* XEngine.m in Sources */,
+				F71A58001EF3B62500450CC2 /* MarketEngine.m in Sources */,
 				F7BAD85C1EEE3DE000E847F4 /* NetworkMonitor.m in Sources */,
 				F7BAD8CE1EEE9A9900E847F4 /* BaseNavigationController.m in Sources */,
 				F7BAD8551EEE3DE000E847F4 /* EventCenter.m in Sources */,
 				F7BAD85E1EEE3DE000E847F4 /* SettingInfo.m in Sources */,
 				F7BAD8601EEE3DE000E847F4 /* ThreadHelper.m in Sources */,
 				F7BAD85A1EEE3DE000E847F4 /* UIView+STLayout.m in Sources */,
-				F7BAD8C61EEE7E8000E847F4 /* SecondViewController.m in Sources */,
+				F71A57F21EF3B4A100450CC2 /* SecondViewController.m in Sources */,
 				F7BAD85F1EEE3DE000E847F4 /* SystemHelper.m in Sources */,
 				F7BAD8531EEE3DE000E847F4 /* XResponse.m in Sources */,
-				F7BAD8C81EEE7E8000E847F4 /* FourthViewController.m in Sources */,
 				F7BAD8541EEE3DE000E847F4 /* Event.m in Sources */,
 				F7BAD84A1EEE3DE000E847F4 /* CacheModel.m in Sources */,
 				F7BAD8A01EEE66EC00E847F4 /* JSUtil.m in Sources */,
 				F7BAD8A11EEE66EC00E847F4 /* WebViewUtil.m in Sources */,
+				F71A57FC1EF3B4E800450CC2 /* FourthViewController.m in Sources */,
 				F7BAD8591EEE3DE000E847F4 /* UIView+CWExtension.m in Sources */,
 				F7BAD8631EEE3DE000E847F4 /* KeyChainStore.m in Sources */,
+				F71A58061EF3B8E500450CC2 /* XSocketEngine.m in Sources */,
 				F7BAD8481EEE3DE000E847F4 /* Global.m in Sources */,
+				F71A580A1EF3D65700450CC2 /* MarketTableViewCell.m in Sources */,
 				F72837971EEFB51B00D04F65 /* TabBarControllerConfig.m in Sources */,
 				F7BAD87F1EEE416300E847F4 /* CCookie.m in Sources */,
 				F7BAD8891EEE416300E847F4 /* WKWebViewController.m in Sources */,
 				F7BAD8521EEE3DE000E847F4 /* XRequest.m in Sources */,
+				F71A57F71EF3B4C600450CC2 /* ThirdViewController.m in Sources */,
 				F7BAD6FD1EEE365F00E847F4 /* main.m in Sources */,
 				F7BAD8461EEE3DE000E847F4 /* CodeZipper.m in Sources */,
 				F7BAD8571EEE3DE000E847F4 /* NSString+Hash.m in Sources */,
 				F7BAD8A21EEE66EC00E847F4 /* XUri.m in Sources */,
+				F71A57ED1EF3B47900450CC2 /* FirstViewController.m in Sources */,
 				F7BAD8491EEE3DE000E847F4 /* Reachability.m in Sources */,
 				F7BAD88C1EEE41A600E847F4 /* SuperViewController.m in Sources */,
 				F7BAD89F1EEE66EC00E847F4 /* JSBridge.m in Sources */,
