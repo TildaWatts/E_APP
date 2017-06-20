@@ -10,12 +10,24 @@
 #import "MarketEngine.h"
 #import "MarketItem.h"
 #import "MarketTableViewCell.h"
+
 #define MarketCellID  @"AllPaymentID"
+#define ChannelCount 3
 
 @interface FirstViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) MarketItem *marketItem;
+
+
+@property (nonatomic, strong) NSArray<MarketItem *> *itemArr;
+@property (nonatomic, copy) NSMutableArray *jsonArrM;
+@property (nonatomic, copy) NSMutableArray *channelNameArrM;
+
+
+
+@property (nonatomic, assign) __block int i ;
+
 
 @end
 
@@ -26,7 +38,7 @@
     
     self.title = @"行情";
     [self setupUI];
-    [self openConnect];
+//    [self openConnect];
     
 }
 
@@ -38,11 +50,19 @@
     self.tableView.rowHeight = 64;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [[UIView alloc]init];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MarketTableViewCell class]) bundle:nil ] forCellReuseIdentifier:MarketCellID];
     [self.view addSubview:self.tableView];
 }
 
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self openConnect];
+    
+}
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [[ESocketManager shareManager] e_close:^(NSInteger code, NSString *reason, BOOL wasClean) {
@@ -53,13 +73,16 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
      MarketTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MarketCellID forIndexPath:indexPath];
-    cell.markItem = self.marketItem;
+    
+    if (self.itemArr.count) {
+        cell.markItem = self.itemArr[indexPath.row];
+    }
     
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return self.channelNameArrM.count;
 }
 
 
@@ -69,31 +92,44 @@
     WS(weakSelf)
     [[ESocketManager shareManager] e_open:SocketUsuites connect:^{
         NSLog(@"成功连接");
-        [weakSelf sendSocket];
+        weakSelf.i = 0;
+        
+        [weakSelf sendSocketChannelName:self.channelNameArrM];
+        
     } receive:^(id message, ESocketReceiveType type) {
         if (type == ESocketReceiveTypeForMessage) {
             NSLog(@"接收 类型1--%@",message);
-            weakSelf.marketItem = [MarketItem yy_modelWithJSON:message];
-            [self.tableView reloadData];
+        
+            weakSelf.i++;
+            NSLog(@"%d",weakSelf.i);
+            
+            if (weakSelf.i%self.channelNameArrM.count == 1) {
+                [self.jsonArrM removeAllObjects];
+            }
+            
+            [self.jsonArrM addObject:message];
+            if (self.jsonArrM.count == self.channelNameArrM.count) {
+                NSString *str = [self.jsonArrM componentsJoinedByString:@","];
+                NSString *newJson = [NSString stringWithFormat:@"[%@]",str];
+                weakSelf.itemArr = [NSArray yy_modelArrayWithClass:[MarketItem class] json:newJson];
+                [self.tableView reloadData];
+            }
         }
         else if (type == ESocketReceiveTypeForPong){
             NSLog(@"接收 类型2--%@",message);
+            
         }
     } failure:^(NSError *error) {
         NSLog(@"连接失败");
     }];
 }
 
-- (void)sendSocket
+- (void)sendSocketChannelName:(NSArray *)ChannelArr
 {
-    NSString *ss = @"bts_cny_ticker";
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:@{@"event":@"addChannel",@"channel":ss} options:NSJSONWritingPrettyPrinted error:nil];
-    [[ESocketManager shareManager] e_send:jsonData];
-    
-//    NSString *sss = @"etc_cny_ticker";
-//    NSData *jsonDatas = [NSJSONSerialization dataWithJSONObject:@{@"event":@"addChannel",@"channel":sss} options:NSJSONWritingPrettyPrinted error:nil];
-//    [[ESocketManager shareManager] e_send:jsonDatas];
-    
+    for (NSString *channelName in ChannelArr) {
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:@{@"event":@"addChannel",@"channel":channelName} options:NSJSONWritingPrettyPrinted error:nil];
+        [[ESocketManager shareManager] e_send:jsonData];
+    }
 }
 
 #pragma mark - lazyLoad
@@ -104,6 +140,53 @@
         _marketItem = [[MarketItem alloc]init];
     }
     return _marketItem;
+}
+
+-(NSMutableArray *)jsonArrM
+{
+    if (!_jsonArrM) {
+        _jsonArrM = [NSMutableArray array];
+    }
+    return _jsonArrM;
+}
+
+-(NSMutableArray *)channelNameArrM
+{
+    if (!_channelNameArrM) {
+        _channelNameArrM = [NSMutableArray array];
+        [_channelNameArrM addObject:@"btc_cny_ticker"];
+        [_channelNameArrM addObject:@"ltc_cny_ticker"];
+        [_channelNameArrM addObject:@"etc_cny_ticker"];
+        [_channelNameArrM addObject:@"bts_cny_ticker"];
+    }
+    return _channelNameArrM;
+}
+
+- (void)setitemArr:(NSArray<MarketItem *> *)itemArr
+{
+    if (itemArr.count) {
+        
+        NSMutableArray<MarketItem *> *itemArrM = [[NSMutableArray alloc]initWithCapacity:itemArr.count];
+        NSMutableArray<MarketItem *> *tempArrM = [NSMutableArray array];
+        
+        [itemArrM addObjectsFromArray:itemArr];
+        [tempArrM addObjectsFromArray:itemArr];
+        
+        [tempArrM enumerateObjectsUsingBlock:^(MarketItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            
+            if ([obj.channel isEqualToString:@"BTC"]) {
+                [itemArrM replaceObjectAtIndex:0 withObject:obj];
+            }else if ([obj.channel isEqualToString:@"LTC"]) {
+                [itemArrM replaceObjectAtIndex:1 withObject:obj];
+            }else if ([obj.channel isEqualToString:@"ETC"]) {
+                [itemArrM replaceObjectAtIndex:2 withObject:obj];
+            }else if ([obj.channel isEqualToString:@"BTS"]) {
+                [itemArrM replaceObjectAtIndex:3 withObject:obj];
+            }
+        }];
+        
+        _itemArr = itemArrM;
+    }
 }
 
 

@@ -31,3 +31,9 @@
 @property (nonatomic, strong) MarketItemInfo *ticker;
 
 @end
+
+@interface MarketItemArr : NSObject
+
+@property (nonatomic, strong) NSArray<MarketItem *> *marketArr;
+
+@end

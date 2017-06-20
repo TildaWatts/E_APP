@@ -67,7 +67,8 @@
             NSLog(@"已经关闭");
             break;
         case ESocketStatusClosedByUser:
-            NSLog(@"已经关闭");
+            [self.webSocket send:data];
+            NSLog(@"已经重启");
             break;
     }
     

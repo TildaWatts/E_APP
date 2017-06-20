@@ -43,3 +43,28 @@
 }
 
 @end
+@implementation MarketItemArr
+//
+//-(void)setMarketArr:(NSArray<MarketItem *> *)marketArr
+//{
+//    if (marketArr.count) {
+//        NSMutableArray<MarketItem *> *tempArrM = [NSMutableArray array];
+//        for (int i = 0; i < marketArr.count; i++) {
+//            if ([marketArr[i].channel isEqualToString:@"BTC"]) {
+//                [tempArrM addObject:marketArr[i]];
+//            }
+//            if ([marketArr[i].channel isEqualToString:@"LTC"]) {
+//                [tempArrM addObject:marketArr[i]];
+//            }
+//            if ([marketArr[i].channel isEqualToString:@"ETC"]) {
+//                [tempArrM addObject:marketArr[i]];
+//            }
+//            if ([marketArr[i].channel isEqualToString:@"BTS"]) {
+//                [tempArrM addObject:marketArr[i]];
+//            }
+//        }
+//        _marketArr = tempArrM;
+//    }
+//}
+
+@end

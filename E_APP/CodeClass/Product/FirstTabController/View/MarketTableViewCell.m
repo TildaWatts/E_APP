@@ -24,9 +24,9 @@
 - (void)setData:(MarketItem *)item
 {
     self.channel.text = item.channel;
-    self.nowPrice.text = [NSString stringWithFormat:@"¥%.4f",[item.ticker.last floatValue]];
-    self.highest.text = [NSString stringWithFormat:@"最高 ¥%.4f",[item.ticker.high floatValue]];
-    self.lowest.text = [NSString stringWithFormat:@"最低 ¥%.4f",[item.ticker.low floatValue]];
+    self.nowPrice.text = [NSString stringWithFormat:@"%.4f",[item.ticker.last floatValue]];
+    self.highest.text = [NSString stringWithFormat:@"¥%.4f",[item.ticker.high floatValue]];
+    self.lowest.text = [NSString stringWithFormat:@"¥%.4f",[item.ticker.low floatValue]];
     
 }
 
