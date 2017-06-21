@@ -24,7 +24,7 @@
 //    paramDic[XD_PROTOCOL_R_HEADER] = [[XHead shareInstance] getXHead ];
         
         
-        paramDic[X_PROTOCOL_R_APPKEY] = self.cmd;
+//        paramDic[X_PROTOCOL_R_APPKEY] = self.cmd;
 //    paramDic[X_PROTOCOL_R_WORD] = self.data;
     [paramDic addEntriesFromDictionary:self.data];
     return paramDic;

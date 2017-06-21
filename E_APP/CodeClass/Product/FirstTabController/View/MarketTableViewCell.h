@@ -12,7 +12,7 @@
 
 @interface MarketTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *channel;
-@property (weak, nonatomic) IBOutlet UILabel *range;
+@property (weak, nonatomic) IBOutlet UILabel *RMBSign;
 @property (weak, nonatomic) IBOutlet UILabel *nowPrice;
 @property (weak, nonatomic) IBOutlet UILabel *highest;
 @property (weak, nonatomic) IBOutlet UILabel *lowest;

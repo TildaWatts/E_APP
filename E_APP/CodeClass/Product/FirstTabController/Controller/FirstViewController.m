@@ -7,9 +7,10 @@
 //
 
 #import "FirstViewController.h"
-#import "MarketEngine.h"
 #import "MarketItem.h"
 #import "MarketTableViewCell.h"
+#import "KLineViewController.h"
+
 
 #define MarketCellID  @"AllPaymentID"
 #define ChannelCount 3
@@ -38,20 +39,22 @@
     
     self.title = @"行情";
     [self setupUI];
-//    [self openConnect];
-    
 }
 
 - (void)setupUI
 {
-    CGRect rect = CGRectMake(0, 180*kScreenHeightScale, kScreenWidth, kScreenHeight);
-    self.tableView = [[UITableView alloc]initWithFrame:rect style:UITableViewStylePlain];
+    CGFloat y = 200*kScreenHeightScale;
+    CGRect rect = CGRectMake(0, y, kScreenWidth, kScreenHeight-y-49);
+    self.tableView = [[UITableView alloc]initWithFrame:rect style:UITableViewStyleGrouped];
     self.tableView.backgroundColor = UIColorFromRGB(0xFFFFFF);
-    self.tableView.rowHeight = 64;
+    self.automaticallyAdjustsScrollViewInsets = false;
+    self.tableView.separatorStyle = NO;
+//    self.tableView.rowHeight = 60;
+    self.tableView.contentSize = CGSizeMake(kScreenWidth, kScreenHeight - 200*kScreenHeightScale);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [[UIView alloc]init];
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MarketTableViewCell class]) bundle:nil ] forCellReuseIdentifier:MarketCellID];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MarketTableViewCell class]) bundle:nil] forCellReuseIdentifier:MarketCellID];
     [self.view addSubview:self.tableView];
 }
 
@@ -72,9 +75,9 @@
 #pragma mark - tableViewDele/DataS
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-     MarketTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MarketCellID forIndexPath:indexPath];
-    
-    if (self.itemArr.count) {
+    MarketTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MarketCellID forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (self.itemArr.count && indexPath.section == 0) {
         cell.markItem = self.itemArr[indexPath.row];
     }
     
@@ -83,6 +86,47 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.channelNameArrM.count;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    KLineViewController *kLineVc = [[KLineViewController alloc]init];
+    [self.navigationController pushViewController:kLineVc animated:YES];
+}
+
+
+#pragma mark - 组
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 40;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 40, kScreenWidth)];
+    view.backgroundColor = UIColorFromRGB(0x0A0A0A);
+    UILabel *titleLab = [[UILabel alloc]init];
+    titleLab.textColor = [UIColor whiteColor];
+    titleLab.font = kFontWithSize(15);
+    [view addSubview:titleLab];
+    [titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(20);
+        make.centerY.mas_equalTo(view);
+    }];
+    if (section == 0) {
+        titleLab.text = @"中国比特币";
+    }else{
+        titleLab.text = @"聚币";
+    }
+    
+    return view;
 }
 
 
@@ -121,6 +165,7 @@
         }
     } failure:^(NSError *error) {
         NSLog(@"连接失败");
+//        [weakSelf showHint:error.domain];
     }];
 }
 
@@ -162,7 +207,7 @@
     return _channelNameArrM;
 }
 
-- (void)setitemArr:(NSArray<MarketItem *> *)itemArr
+-(void)setItemArr:(NSArray<MarketItem *> *)itemArr
 {
     if (itemArr.count) {
         

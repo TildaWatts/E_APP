@@ -146,6 +146,9 @@ static     NSMutableDictionary* time_dic  = nil;
     }
     NSDictionary *paramDic = [request formRequest];
     
+//    NSString *str = [NSString stringWithFormat:@"%@",request.cmd];
+    NSString *getApi = [Usuite stringByAppendingString:request.cmd];
+    
     AFHTTPSessionManager *manager  =   nil;
     if( type == HTTPS)
         manager = [XEngine getDefaultHttpsClient] ;
@@ -153,53 +156,58 @@ static     NSMutableDictionary* time_dic  = nil;
         manager = [XEngine getDefaultHttpClient] ;
 
 #pragma mark - POST
-    
-    [manager POST:Usuite parameters:paramDic progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)
-    {
-        [response loadData:responseObject];
-        if( response.errorCode == OKAY && response.bizCode == OKAY )
-        {
-            XLog(@"请求成功");
-            XLog(@"%@", response);
-            
-            requestTime = CZ_getCurrentLocalTime();
-            
-            if( response.local_ext == nil)
-            {
-                [XEngine setRequestTime:request.cmd time:requestTime];
-            }
-            else
-            {
-                [XEngine setRequestTime:response.local_ext time:requestTime];
-            }
-            
-            //请求成功，更新header
-            [[XHead shareInstance] loadFromDic:response.header];
-            
-            /**
-             *  当缓存模式为 CACHE_MODE_DEFAULT 并且 缓存存在情况下。
-             *  先请求返回缓存。之后再请求数据
-             *  最后自行保存缓存
-             */
-            
-            if( request.mode != CACHE_MODE_OFF  && bCacheLoad == NO )
-            {
-                [response saveCache];
-            }
-            
-            [self onSuccess:request  response:response];
-          
-        }
-        else
-            [self onFail:request  response:response];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error)
-    {
-        NSLog(@"%@:%@", Usuite,[error localizedDescription]);
-        response.errorCode =  ERROR_AFN_ERROR;
-        [self onFail:request  response:response];
+    [manager GET:getApi parameters:paramDic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        XLog(@"ssssssss");
+
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        XLog(@"ffffffff");
     }];
+//    [manager POST:Usuite parameters:paramDic progress:^(NSProgress * _Nonnull uploadProgress) {
+//        
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)
+//    {
+//        [response loadData:responseObject];
+//        if( response.errorCode == OKAY && response.bizCode == OKAY )
+//        {
+//            XLog(@"请求成功");
+//            XLog(@"%@", response);
+//            
+//            requestTime = CZ_getCurrentLocalTime();
+//            
+//            if( response.local_ext == nil)
+//            {
+//                [XEngine setRequestTime:request.cmd time:requestTime];
+//            }
+//            else
+//            {
+//                [XEngine setRequestTime:response.local_ext time:requestTime];
+//            }
+//            
+//            //请求成功，更新header
+//            [[XHead shareInstance] loadFromDic:response.header];
+//            
+//            /**
+//             *  当缓存模式为 CACHE_MODE_DEFAULT 并且 缓存存在情况下。
+//             *  先请求返回缓存。之后再请求数据
+//             *  最后自行保存缓存
+//             */
+//            
+//            if( request.mode != CACHE_MODE_OFF  && bCacheLoad == NO )
+//            {
+//                [response saveCache];
+//            }
+//            
+//            [self onSuccess:request  response:response];
+//          
+//        }
+//        else
+//            [self onFail:request  response:response];
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error)
+//    {
+//        NSLog(@"%@:%@", Usuite,[error localizedDescription]);
+//        response.errorCode =  ERROR_AFN_ERROR;
+//        [self onFail:request  response:response];
+//    }];
     return request.reqNO ;
 }
 

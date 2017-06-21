@@ -19,8 +19,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="534" height="137"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnP-K4-luu">
-                        <rect key="frame" x="20" y="55" width="39.5" height="28"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="币种" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnP-K4-luu">
+                        <rect key="frame" x="20" y="55" width="40" height="28"/>
                         <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="20"/>
                         <color key="textColor" red="0.12156862745098039" green="0.14901960784313725" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -79,16 +79,24 @@
                         <color key="textColor" red="0.83921568627450982" green="0.0" blue="0.050980392156862744" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOB-DO-8xS">
-                        <rect key="frame" x="178.5" y="56.5" width="48" height="24"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前币值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOB-DO-8xS">
+                        <rect key="frame" x="178.5" y="56.5" width="68" height="24"/>
                         <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="17"/>
                         <color key="textColor" red="0.83921568627450982" green="0.0" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgu-3Z-lcy">
+                        <rect key="frame" x="0.0" y="136" width="534" height="0.5"/>
+                        <color key="backgroundColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="YtA-LE-hQB"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="yOB-DO-8xS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2dI-N7-nfK"/>
+                    <constraint firstAttribute="bottom" secondItem="cgu-3Z-lcy" secondAttribute="bottom" id="8Ow-Od-Ago"/>
                     <constraint firstItem="G9Q-yE-hiN" firstAttribute="top" secondItem="Vaa-09-hV6" secondAttribute="bottom" id="By9-Ld-ni1"/>
                     <constraint firstItem="Vaa-09-hV6" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="HHm-Gb-C9k"/>
                     <constraint firstItem="Wyg-3B-If5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-100" id="JQn-tM-HnQ"/>
@@ -102,9 +110,12 @@
                     <constraint firstItem="ZnP-K4-luu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="cFj-06-iSb"/>
                     <constraint firstItem="ZnP-K4-luu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g3d-eJ-0Cf"/>
                     <constraint firstItem="Vaa-09-hV6" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="gFr-Sq-F78"/>
+                    <constraint firstAttribute="trailing" secondItem="cgu-3Z-lcy" secondAttribute="trailing" id="j0t-pE-clJ"/>
+                    <constraint firstItem="cgu-3Z-lcy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qTe-v9-LRi"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="RMBSign" destination="Wyg-3B-If5" id="7Ja-6P-OnC"/>
                 <outlet property="channel" destination="ZnP-K4-luu" id="G0A-cj-F4s"/>
                 <outlet property="highest" destination="jnb-a9-IVb" id="Uao-1r-7SZ"/>
                 <outlet property="lowest" destination="iPz-tH-eba" id="Ua4-2O-3Gl"/>

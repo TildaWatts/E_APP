@@ -12,13 +12,6 @@
 //网络封装
 //#import "USLoginManager.h"
 
-//验证 核实
-//#import "USVerify.h"
-
-//刷新控件
-//#import "MJRefresh.h"
-
-
 //拉伸图片
 //#import "UIImage+Resizable.h"
 

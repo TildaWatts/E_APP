@@ -12,12 +12,15 @@
 		F71A57F21EF3B4A100450CC2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57F11EF3B4A100450CC2 /* SecondViewController.m */; };
 		F71A57F71EF3B4C600450CC2 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57F61EF3B4C600450CC2 /* ThirdViewController.m */; };
 		F71A57FC1EF3B4E800450CC2 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57FA1EF3B4E800450CC2 /* FourthViewController.m */; };
-		F71A58001EF3B62500450CC2 /* MarketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57FF1EF3B62500450CC2 /* MarketEngine.m */; };
 		F71A58031EF3B63D00450CC2 /* MarketItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A58021EF3B63D00450CC2 /* MarketItem.m */; };
 		F71A58061EF3B8E500450CC2 /* XSocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A58051EF3B8E500450CC2 /* XSocketEngine.m */; };
 		F71A580A1EF3D65700450CC2 /* MarketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A58081EF3D65700450CC2 /* MarketTableViewCell.m */; };
 		F71A580B1EF3D65700450CC2 /* MarketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71A58091EF3D65700450CC2 /* MarketTableViewCell.xib */; };
 		F72837971EEFB51B00D04F65 /* TabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F72837961EEFB51B00D04F65 /* TabBarControllerConfig.m */; };
+		F76967EB1EFA073700A885E5 /* UITableView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = F76967E81EFA073700A885E5 /* UITableView+EmptyData.m */; };
+		F76967F61EFA2DDF00A885E5 /* KLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76967F31EFA2DDF00A885E5 /* KLineViewController.m */; };
+		F76967F91EFA2E0A00A885E5 /* KLineEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F76967F81EFA2E0A00A885E5 /* KLineEngine.m */; };
+		F76967FC1EFA529900A885E5 /* KLineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F76967FB1EFA529900A885E5 /* KLineItem.m */; };
 		F7BAD6FD1EEE365F00E847F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD6FC1EEE365F00E847F4 /* main.m */; };
 		F7BAD7081EEE365F00E847F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BAD7071EEE365F00E847F4 /* Assets.xcassets */; };
 		F7BAD70B1EEE365F00E847F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BAD7091EEE365F00E847F4 /* LaunchScreen.storyboard */; };
@@ -87,8 +90,6 @@
 		F71A57F61EF3B4C600450CC2 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		F71A57F91EF3B4E800450CC2 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		F71A57FA1EF3B4E800450CC2 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
-		F71A57FE1EF3B62500450CC2 /* MarketEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketEngine.h; sourceTree = "<group>"; };
-		F71A57FF1EF3B62500450CC2 /* MarketEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketEngine.m; sourceTree = "<group>"; };
 		F71A58011EF3B63D00450CC2 /* MarketItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketItem.h; sourceTree = "<group>"; };
 		F71A58021EF3B63D00450CC2 /* MarketItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketItem.m; sourceTree = "<group>"; };
 		F71A58041EF3B8E500450CC2 /* XSocketEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSocketEngine.h; sourceTree = "<group>"; };
@@ -98,6 +99,14 @@
 		F71A58091EF3D65700450CC2 /* MarketTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketTableViewCell.xib; sourceTree = "<group>"; };
 		F72837951EEFB51B00D04F65 /* TabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConfig.h; sourceTree = "<group>"; };
 		F72837961EEFB51B00D04F65 /* TabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarControllerConfig.m; sourceTree = "<group>"; };
+		F76967E71EFA073600A885E5 /* UITableView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyData.h"; sourceTree = "<group>"; };
+		F76967E81EFA073700A885E5 /* UITableView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmptyData.m"; sourceTree = "<group>"; };
+		F76967F21EFA2DDF00A885E5 /* KLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLineViewController.h; sourceTree = "<group>"; };
+		F76967F31EFA2DDF00A885E5 /* KLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLineViewController.m; sourceTree = "<group>"; };
+		F76967F71EFA2E0A00A885E5 /* KLineEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLineEngine.h; sourceTree = "<group>"; };
+		F76967F81EFA2E0A00A885E5 /* KLineEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLineEngine.m; sourceTree = "<group>"; };
+		F76967FA1EFA529900A885E5 /* KLineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLineItem.h; sourceTree = "<group>"; };
+		F76967FB1EFA529900A885E5 /* KLineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLineItem.m; sourceTree = "<group>"; };
 		F7BAD6F81EEE365F00E847F4 /* E_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BAD6FC1EEE365F00E847F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7BAD7071EEE365F00E847F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -271,8 +280,6 @@
 			children = (
 				F71A57EB1EF3B47900450CC2 /* FirstViewController.h */,
 				F71A57EC1EF3B47900450CC2 /* FirstViewController.m */,
-				F71A57FE1EF3B62500450CC2 /* MarketEngine.h */,
-				F71A57FF1EF3B62500450CC2 /* MarketEngine.m */,
 				F71A58011EF3B63D00450CC2 /* MarketItem.h */,
 				F71A58021EF3B63D00450CC2 /* MarketItem.m */,
 			);
@@ -343,6 +350,41 @@
 				F7BAD7F61EEE3DE000E847F4 /* XDLog.h */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		F76967ED1EFA2CB000A885E5 /* KLine */ = {
+			isa = PBXGroup;
+			children = (
+				F76967F11EFA2DDF00A885E5 /* Controller */,
+				F76967F41EFA2DDF00A885E5 /* View */,
+				F76967F51EFA2DDF00A885E5 /* Model */,
+			);
+			path = KLine;
+			sourceTree = "<group>";
+		};
+		F76967F11EFA2DDF00A885E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F76967F21EFA2DDF00A885E5 /* KLineViewController.h */,
+				F76967F31EFA2DDF00A885E5 /* KLineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F76967F41EFA2DDF00A885E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F76967F51EFA2DDF00A885E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F76967FA1EFA529900A885E5 /* KLineItem.h */,
+				F76967FB1EFA529900A885E5 /* KLineItem.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F7BAD6EF1EEE365F00E847F4 = {
@@ -482,6 +524,8 @@
 		F7BAD7FA1EEE3DE000E847F4 /* engine */ = {
 			isa = PBXGroup;
 			children = (
+				F76967F71EFA2E0A00A885E5 /* KLineEngine.h */,
+				F76967F81EFA2E0A00A885E5 /* KLineEngine.m */,
 				F7BAD7FB1EEE3DE000E847F4 /* FileEngine.h */,
 				F7BAD7FC1EEE3DE000E847F4 /* FileEngine.m */,
 				F7BAD7FD1EEE3DE000E847F4 /* UserEngine.h */,
@@ -536,6 +580,8 @@
 		F7BAD8171EEE3DE000E847F4 /* UIViewExtension */ = {
 			isa = PBXGroup;
 			children = (
+				F76967E71EFA073600A885E5 /* UITableView+EmptyData.h */,
+				F76967E81EFA073700A885E5 /* UITableView+EmptyData.m */,
 				F7BAD8181EEE3DE000E847F4 /* UIView+CWExtension.h */,
 				F7BAD8191EEE3DE000E847F4 /* UIView+CWExtension.m */,
 				F7BAD81A1EEE3DE000E847F4 /* UIView+STLayout.h */,
@@ -685,6 +731,7 @@
 		F7BAD8B91EEE7E8000E847F4 /* FirstTabController */ = {
 			isa = PBXGroup;
 			children = (
+				F76967ED1EFA2CB000A885E5 /* KLine */,
 				F71A57EA1EF3B47900450CC2 /* Controller */,
 				F71A57E91EF3B45D00450CC2 /* View */,
 			);
@@ -842,6 +889,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7BAD8801EEE416300E847F4 /* CURLEngine.m in Sources */,
+				F76967F91EFA2E0A00A885E5 /* KLineEngine.m in Sources */,
 				F7BAD84E1EEE3DE000E847F4 /* FileEngine.m in Sources */,
 				F71A58031EF3B63D00450CC2 /* MarketItem.m in Sources */,
 				F7BAD8501EEE3DE000E847F4 /* SettingEngine.m in Sources */,
@@ -853,8 +901,8 @@
 				F7BAD85B1EEE3DE000E847F4 /* BatteryMonitor.m in Sources */,
 				F7BAD84F1EEE3DE000E847F4 /* UserEngine.m in Sources */,
 				F7BAD8511EEE3DE000E847F4 /* XEngine.m in Sources */,
-				F71A58001EF3B62500450CC2 /* MarketEngine.m in Sources */,
 				F7BAD85C1EEE3DE000E847F4 /* NetworkMonitor.m in Sources */,
+				F76967F61EFA2DDF00A885E5 /* KLineViewController.m in Sources */,
 				F7BAD8CE1EEE9A9900E847F4 /* BaseNavigationController.m in Sources */,
 				F7BAD8551EEE3DE000E847F4 /* EventCenter.m in Sources */,
 				F7BAD85E1EEE3DE000E847F4 /* SettingInfo.m in Sources */,
@@ -862,6 +910,7 @@
 				F7BAD85A1EEE3DE000E847F4 /* UIView+STLayout.m in Sources */,
 				F71A57F21EF3B4A100450CC2 /* SecondViewController.m in Sources */,
 				F7BAD85F1EEE3DE000E847F4 /* SystemHelper.m in Sources */,
+				F76967FC1EFA529900A885E5 /* KLineItem.m in Sources */,
 				F7BAD8531EEE3DE000E847F4 /* XResponse.m in Sources */,
 				F7BAD8541EEE3DE000E847F4 /* Event.m in Sources */,
 				F7BAD84A1EEE3DE000E847F4 /* CacheModel.m in Sources */,
@@ -883,6 +932,7 @@
 				F7BAD8571EEE3DE000E847F4 /* NSString+Hash.m in Sources */,
 				F7BAD8A21EEE66EC00E847F4 /* XUri.m in Sources */,
 				F71A57ED1EF3B47900450CC2 /* FirstViewController.m in Sources */,
+				F76967EB1EFA073700A885E5 /* UITableView+EmptyData.m in Sources */,
 				F7BAD8491EEE3DE000E847F4 /* Reachability.m in Sources */,
 				F7BAD88C1EEE41A600E847F4 /* SuperViewController.m in Sources */,
 				F7BAD89F1EEE66EC00E847F4 /* JSBridge.m in Sources */,
