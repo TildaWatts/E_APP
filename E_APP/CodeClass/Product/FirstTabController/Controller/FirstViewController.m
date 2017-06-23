@@ -10,7 +10,7 @@
 #import "MarketItem.h"
 #import "MarketTableViewCell.h"
 #import "KLineViewController.h"
-
+#import "AppDelegate.h"
 
 #define MarketCellID  @"AllPaymentID"
 #define ChannelCount 3
@@ -44,13 +44,13 @@
 - (void)setupUI
 {
     CGFloat y = 200*kScreenHeightScale;
-    CGRect rect = CGRectMake(0, y, kScreenWidth, kScreenHeight-y-49);
+    CGRect rect = CGRectMake(0, y, SCREEN_MAX_LENGTH, kScreenHeight-y-49);
     self.tableView = [[UITableView alloc]initWithFrame:rect style:UITableViewStyleGrouped];
     self.tableView.backgroundColor = UIColorFromRGB(0xFFFFFF);
     self.automaticallyAdjustsScrollViewInsets = false;
     self.tableView.separatorStyle = NO;
 //    self.tableView.rowHeight = 60;
-    self.tableView.contentSize = CGSizeMake(kScreenWidth, kScreenHeight - 200*kScreenHeightScale);
+//    self.tableView.contentSize = CGSizeMake(kScreenWidth, kScreenHeight - 200*kScreenHeightScale);
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [[UIView alloc]init];
@@ -64,7 +64,6 @@
     [super viewWillAppear:animated];
     
     [self openConnect];
-    
 }
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
@@ -94,7 +93,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     KLineViewController *kLineVc = [[KLineViewController alloc]init];
-    [self.navigationController pushViewController:kLineVc animated:YES];
+//    [self.navigationController pushViewController:kLineVc animated:YES];
+    [self presentViewController:kLineVc animated:YES completion:nil];
 }
 
 

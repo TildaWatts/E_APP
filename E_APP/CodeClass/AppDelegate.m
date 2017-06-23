@@ -37,6 +37,7 @@
     [self setUpNavigationBarAppearance];
 }
 
+
 /**
  *  设置navigationBar样式
  */

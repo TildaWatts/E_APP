@@ -8,9 +8,12 @@
 
 #import "KLineEngine.h"
 
-@implementation KLineEngine
+#define CMD_KLINE @"kline"
 
 static  KLineEngine * _instance = nil;
+
+@implementation KLineEngine
+
 
 +(KLineEngine *) shareInstance
 {
@@ -24,15 +27,31 @@ static  KLineEngine * _instance = nil;
 }
 
 
-- (void)kLineWithCurrency:(NSString *)currency type:(NSString *)type since:(id)since size:(int)size
+- (void)kLineWithCurrency:(NSString *)currency type:(NSString *)type since:(long int)since size:(int)size
 {
-    XRequest *request = [[XRequest alloc]initWithCmd:@"kline"];
+    XRequest *request = [[XRequest alloc]initWithCmd:CMD_KLINE];
     [request addData:@"currency" value:currency];
     [request addData:@"type" value:type];
-//    [request addData:@"since" num:[NSNumber numberWithDouble:since]];
-//    [request addData:@"size" i_value:size];
+    [request addData:@"since" long_i_value:since];
+    [request addData:@"size" i_value:size];
 
     [self doRequest:request];
 }
+
+
+-(void) onSuccess:(XRequest*) request response:(XResponse*) response
+{
+    XLog(@"KLineEngine onSuccess request:%@=response:%@",request,response);
+    if( request == nil  || request.cmd == nil)
+        return ;
+    
+    if( [request.cmd isEqualToString:CMD_KLINE])
+    {
+        [EventCenter Event_PostData: MSG_KLINE_SUCCESS obj:response ];
+    }
+
+    
+}
+
 
 @end

@@ -7,7 +7,13 @@
 //
 
 #import "SuperViewController.h"
+#import "Chart.h"
 
 @interface KLineViewController : SuperViewController
+
+/**
+ *  k线图
+ */
+@property (nonatomic,strong) Chart *candleChart;
 
 @end

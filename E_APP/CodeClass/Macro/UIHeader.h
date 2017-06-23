@@ -13,6 +13,10 @@
 //屏幕宽高
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define SCREEN_MAX_LENGTH (MAX(kScreenWidth, kScreenHeight))
+#define SCREEN_MIN_LENGTH (MIN(kScreenWidth, kScreenHeight))
+
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 //UI标注图的屏幕size为(375.f, 667.f)

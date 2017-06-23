@@ -70,7 +70,14 @@
     }
     [self.data setValue:[NSNumber numberWithInt:value] forKey:key];
 }
-
+-(void) addData:(NSString*) key long_i_value: (long int) value
+{
+    if( self.data == nil)
+    {
+        self.data = [NSMutableDictionary dictionary];
+    }
+    [self.data setValue:[NSNumber numberWithLong:value] forKey:key];
+}
 -(void) addData:(NSString*) key num: (NSNumber*) value
 {
     if( self.data == nil)

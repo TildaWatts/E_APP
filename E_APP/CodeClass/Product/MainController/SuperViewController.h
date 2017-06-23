@@ -10,4 +10,7 @@
 
 @interface SuperViewController : UIViewController
 
+@property (nonatomic, assign) BOOL isOrientation;
+
+
 @end

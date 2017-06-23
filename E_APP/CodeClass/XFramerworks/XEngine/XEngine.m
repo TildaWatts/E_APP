@@ -159,8 +159,12 @@ static     NSMutableDictionary* time_dic  = nil;
     [manager GET:getApi parameters:paramDic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         XLog(@"ssssssss");
 
+        [response loadData:responseObject];
+        [self onSuccess:request  response:response];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         XLog(@"ffffffff");
+        [self onFail:request  response:response];
     }];
 //    [manager POST:Usuite parameters:paramDic progress:^(NSProgress * _Nonnull uploadProgress) {
 //        
@@ -185,7 +189,7 @@ static     NSMutableDictionary* time_dic  = nil;
 //            
 //            //请求成功，更新header
 //            [[XHead shareInstance] loadFromDic:response.header];
-//            
+//
 //            /**
 //             *  当缓存模式为 CACHE_MODE_DEFAULT 并且 缓存存在情况下。
 //             *  先请求返回缓存。之后再请求数据

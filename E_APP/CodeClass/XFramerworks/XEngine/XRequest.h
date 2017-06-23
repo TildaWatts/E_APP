@@ -58,7 +58,7 @@ typedef enum CACHE_MODE
 -(void) addData:(NSString*) key i_value: (int) value;
 
 -(void) addData:(NSString*) key num: (NSNumber*) value;
-
+-(void) addData:(NSString*) key long_i_value: (long int) value;
 
 /**
  *  构建完整请求

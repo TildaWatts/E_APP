@@ -34,5 +34,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+//
+//- (BOOL)shouldAutorotate
+//{
+//    return NO;
+//}
+//- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+//{
+//    return (self.isOrientation)?UIInterfaceOrientationMaskLandscapeRight:UIInterfaceOrientationMaskPortrait;
+//}
+
 
 @end

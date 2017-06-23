@@ -17,6 +17,17 @@
 		F71A580A1EF3D65700450CC2 /* MarketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A58081EF3D65700450CC2 /* MarketTableViewCell.m */; };
 		F71A580B1EF3D65700450CC2 /* MarketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71A58091EF3D65700450CC2 /* MarketTableViewCell.xib */; };
 		F72837971EEFB51B00D04F65 /* TabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F72837961EEFB51B00D04F65 /* TabBarControllerConfig.m */; };
+		F75442C41EFBA56400C60410 /* AreaChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F75442B11EFBA56400C60410 /* AreaChartModel.m */; };
+		F75442C51EFBA56400C60410 /* CandleChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F75442B31EFBA56400C60410 /* CandleChartModel.m */; };
+		F75442C61EFBA56400C60410 /* Chart.m in Sources */ = {isa = PBXBuildFile; fileRef = F75442B51EFBA56400C60410 /* Chart.m */; };
+		F75442C71EFBA56400C60410 /* ChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F75442B81EFBA56400C60410 /* ChartModel.m */; };
+		F75442C81EFBA56400C60410 /* ColumnChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F75442BA1EFBA56400C60410 /* ColumnChartModel.m */; };
+		F75442C91EFBA56400C60410 /* indicators.json in Resources */ = {isa = PBXBuildFile; fileRef = F75442BB1EFBA56400C60410 /* indicators.json */; };
+		F75442CA1EFBA56400C60410 /* LineChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F75442BD1EFBA56400C60410 /* LineChartModel.m */; };
+		F75442CB1EFBA56400C60410 /* MACDChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F75442BF1EFBA56400C60410 /* MACDChartModel.m */; };
+		F75442CC1EFBA56400C60410 /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = F75442C11EFBA56400C60410 /* Section.m */; };
+		F75442CD1EFBA56400C60410 /* YAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = F75442C31EFBA56400C60410 /* YAxis.m */; };
+		F75442CF1EFBA5CC00C60410 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = F75442CE1EFBA5CC00C60410 /* data.txt */; };
 		F76967EB1EFA073700A885E5 /* UITableView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = F76967E81EFA073700A885E5 /* UITableView+EmptyData.m */; };
 		F76967F61EFA2DDF00A885E5 /* KLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76967F31EFA2DDF00A885E5 /* KLineViewController.m */; };
 		F76967F91EFA2E0A00A885E5 /* KLineEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F76967F81EFA2E0A00A885E5 /* KLineEngine.m */; };
@@ -99,6 +110,27 @@
 		F71A58091EF3D65700450CC2 /* MarketTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketTableViewCell.xib; sourceTree = "<group>"; };
 		F72837951EEFB51B00D04F65 /* TabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarControllerConfig.h; sourceTree = "<group>"; };
 		F72837961EEFB51B00D04F65 /* TabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarControllerConfig.m; sourceTree = "<group>"; };
+		F75442B01EFBA56400C60410 /* AreaChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaChartModel.h; sourceTree = "<group>"; };
+		F75442B11EFBA56400C60410 /* AreaChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaChartModel.m; sourceTree = "<group>"; };
+		F75442B21EFBA56400C60410 /* CandleChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleChartModel.h; sourceTree = "<group>"; };
+		F75442B31EFBA56400C60410 /* CandleChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleChartModel.m; sourceTree = "<group>"; };
+		F75442B41EFBA56400C60410 /* Chart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chart.h; sourceTree = "<group>"; };
+		F75442B51EFBA56400C60410 /* Chart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chart.m; sourceTree = "<group>"; };
+		F75442B61EFBA56400C60410 /* ChartColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartColor.h; sourceTree = "<group>"; };
+		F75442B71EFBA56400C60410 /* ChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartModel.h; sourceTree = "<group>"; };
+		F75442B81EFBA56400C60410 /* ChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartModel.m; sourceTree = "<group>"; };
+		F75442B91EFBA56400C60410 /* ColumnChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnChartModel.h; sourceTree = "<group>"; };
+		F75442BA1EFBA56400C60410 /* ColumnChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnChartModel.m; sourceTree = "<group>"; };
+		F75442BB1EFBA56400C60410 /* indicators.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = indicators.json; sourceTree = "<group>"; };
+		F75442BC1EFBA56400C60410 /* LineChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartModel.h; sourceTree = "<group>"; };
+		F75442BD1EFBA56400C60410 /* LineChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartModel.m; sourceTree = "<group>"; };
+		F75442BE1EFBA56400C60410 /* MACDChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACDChartModel.h; sourceTree = "<group>"; };
+		F75442BF1EFBA56400C60410 /* MACDChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACDChartModel.m; sourceTree = "<group>"; };
+		F75442C01EFBA56400C60410 /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
+		F75442C11EFBA56400C60410 /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		F75442C21EFBA56400C60410 /* YAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAxis.h; sourceTree = "<group>"; };
+		F75442C31EFBA56400C60410 /* YAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAxis.m; sourceTree = "<group>"; };
+		F75442CE1EFBA5CC00C60410 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		F76967E71EFA073600A885E5 /* UITableView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyData.h"; sourceTree = "<group>"; };
 		F76967E81EFA073700A885E5 /* UITableView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmptyData.m"; sourceTree = "<group>"; };
 		F76967F21EFA2DDF00A885E5 /* KLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLineViewController.h; sourceTree = "<group>"; };
@@ -352,6 +384,33 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
+		F75442AF1EFBA56400C60410 /* EventCharts */ = {
+			isa = PBXGroup;
+			children = (
+				F75442B01EFBA56400C60410 /* AreaChartModel.h */,
+				F75442B11EFBA56400C60410 /* AreaChartModel.m */,
+				F75442B21EFBA56400C60410 /* CandleChartModel.h */,
+				F75442B31EFBA56400C60410 /* CandleChartModel.m */,
+				F75442B41EFBA56400C60410 /* Chart.h */,
+				F75442B51EFBA56400C60410 /* Chart.m */,
+				F75442B61EFBA56400C60410 /* ChartColor.h */,
+				F75442B71EFBA56400C60410 /* ChartModel.h */,
+				F75442B81EFBA56400C60410 /* ChartModel.m */,
+				F75442B91EFBA56400C60410 /* ColumnChartModel.h */,
+				F75442BA1EFBA56400C60410 /* ColumnChartModel.m */,
+				F75442BB1EFBA56400C60410 /* indicators.json */,
+				F75442BC1EFBA56400C60410 /* LineChartModel.h */,
+				F75442BD1EFBA56400C60410 /* LineChartModel.m */,
+				F75442BE1EFBA56400C60410 /* MACDChartModel.h */,
+				F75442BF1EFBA56400C60410 /* MACDChartModel.m */,
+				F75442C01EFBA56400C60410 /* Section.h */,
+				F75442C11EFBA56400C60410 /* Section.m */,
+				F75442C21EFBA56400C60410 /* YAxis.h */,
+				F75442C31EFBA56400C60410 /* YAxis.m */,
+			);
+			path = EventCharts;
+			sourceTree = "<group>";
+		};
 		F76967ED1EFA2CB000A885E5 /* KLine */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,6 +476,7 @@
 		F7BAD6FB1EEE365F00E847F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F75442CE1EFBA5CC00C60410 /* data.txt */,
 				F7BAD7071EEE365F00E847F4 /* Assets.xcassets */,
 				F7BAD7091EEE365F00E847F4 /* LaunchScreen.storyboard */,
 				F7BAD70C1EEE365F00E847F4 /* Info.plist */,
@@ -476,6 +536,7 @@
 		F7BAD7EB1EEE3DE000E847F4 /* TheThird */ = {
 			isa = PBXGroup;
 			children = (
+				F75442AF1EFBA56400C60410 /* EventCharts */,
 				F7BAD7EC1EEE3DE000E847F4 /* Reachability */,
 			);
 			path = TheThird;
@@ -830,6 +891,8 @@
 				F71A580B1EF3D65700450CC2 /* MarketTableViewCell.xib in Resources */,
 				F7BAD70B1EEE365F00E847F4 /* LaunchScreen.storyboard in Resources */,
 				F7BAD7081EEE365F00E847F4 /* Assets.xcassets in Resources */,
+				F75442C91EFBA56400C60410 /* indicators.json in Resources */,
+				F75442CF1EFBA5CC00C60410 /* data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,6 +951,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75442C51EFBA56400C60410 /* CandleChartModel.m in Sources */,
 				F7BAD8801EEE416300E847F4 /* CURLEngine.m in Sources */,
 				F76967F91EFA2E0A00A885E5 /* KLineEngine.m in Sources */,
 				F7BAD84E1EEE3DE000E847F4 /* FileEngine.m in Sources */,
@@ -895,6 +959,7 @@
 				F7BAD8501EEE3DE000E847F4 /* SettingEngine.m in Sources */,
 				F7BAD8371EEE3DE000E847F4 /* AppDelegate.m in Sources */,
 				F7BAD8561EEE3DE000E847F4 /* XDRefreshGifHeader.m in Sources */,
+				F75442CA1EFBA56400C60410 /* LineChartModel.m in Sources */,
 				F7BAD89E1EEE66EC00E847F4 /* LocalVcBridge.m in Sources */,
 				F7BAD8451EEE3DE000E847F4 /* AppDev.m in Sources */,
 				F7BAD8581EEE3DE000E847F4 /* NSString+URL.m in Sources */,
@@ -903,14 +968,18 @@
 				F7BAD8511EEE3DE000E847F4 /* XEngine.m in Sources */,
 				F7BAD85C1EEE3DE000E847F4 /* NetworkMonitor.m in Sources */,
 				F76967F61EFA2DDF00A885E5 /* KLineViewController.m in Sources */,
+				F75442C41EFBA56400C60410 /* AreaChartModel.m in Sources */,
 				F7BAD8CE1EEE9A9900E847F4 /* BaseNavigationController.m in Sources */,
 				F7BAD8551EEE3DE000E847F4 /* EventCenter.m in Sources */,
 				F7BAD85E1EEE3DE000E847F4 /* SettingInfo.m in Sources */,
+				F75442C61EFBA56400C60410 /* Chart.m in Sources */,
 				F7BAD8601EEE3DE000E847F4 /* ThreadHelper.m in Sources */,
 				F7BAD85A1EEE3DE000E847F4 /* UIView+STLayout.m in Sources */,
 				F71A57F21EF3B4A100450CC2 /* SecondViewController.m in Sources */,
 				F7BAD85F1EEE3DE000E847F4 /* SystemHelper.m in Sources */,
+				F75442CC1EFBA56400C60410 /* Section.m in Sources */,
 				F76967FC1EFA529900A885E5 /* KLineItem.m in Sources */,
+				F75442CD1EFBA56400C60410 /* YAxis.m in Sources */,
 				F7BAD8531EEE3DE000E847F4 /* XResponse.m in Sources */,
 				F7BAD8541EEE3DE000E847F4 /* Event.m in Sources */,
 				F7BAD84A1EEE3DE000E847F4 /* CacheModel.m in Sources */,
@@ -919,6 +988,7 @@
 				F71A57FC1EF3B4E800450CC2 /* FourthViewController.m in Sources */,
 				F7BAD8591EEE3DE000E847F4 /* UIView+CWExtension.m in Sources */,
 				F7BAD8631EEE3DE000E847F4 /* KeyChainStore.m in Sources */,
+				F75442C81EFBA56400C60410 /* ColumnChartModel.m in Sources */,
 				F71A58061EF3B8E500450CC2 /* XSocketEngine.m in Sources */,
 				F7BAD8481EEE3DE000E847F4 /* Global.m in Sources */,
 				F71A580A1EF3D65700450CC2 /* MarketTableViewCell.m in Sources */,
@@ -926,11 +996,13 @@
 				F7BAD87F1EEE416300E847F4 /* CCookie.m in Sources */,
 				F7BAD8891EEE416300E847F4 /* WKWebViewController.m in Sources */,
 				F7BAD8521EEE3DE000E847F4 /* XRequest.m in Sources */,
+				F75442CB1EFBA56400C60410 /* MACDChartModel.m in Sources */,
 				F71A57F71EF3B4C600450CC2 /* ThirdViewController.m in Sources */,
 				F7BAD6FD1EEE365F00E847F4 /* main.m in Sources */,
 				F7BAD8461EEE3DE000E847F4 /* CodeZipper.m in Sources */,
 				F7BAD8571EEE3DE000E847F4 /* NSString+Hash.m in Sources */,
 				F7BAD8A21EEE66EC00E847F4 /* XUri.m in Sources */,
+				F75442C71EFBA56400C60410 /* ChartModel.m in Sources */,
 				F71A57ED1EF3B47900450CC2 /* FirstViewController.m in Sources */,
 				F76967EB1EFA073700A885E5 /* UITableView+EmptyData.m in Sources */,
 				F7BAD8491EEE3DE000E847F4 /* Reachability.m in Sources */,

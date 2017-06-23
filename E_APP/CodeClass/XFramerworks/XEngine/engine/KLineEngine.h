@@ -12,6 +12,6 @@
 @interface KLineEngine : XEngine
 
 +(KLineEngine *) shareInstance;
-- (void)kLineWithCurrency:(NSString *)currency type:(NSString *)type since:(id)since size:(int)size;
+- (void)kLineWithCurrency:(NSString *)currency type:(NSString *)type since:(long int)since size:(int)size;
 
 @end
