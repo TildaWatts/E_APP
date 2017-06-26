@@ -16,4 +16,7 @@
  */
 @property (nonatomic,strong) Chart *candleChart;
 
+@property (nonatomic, strong) NSString *currency;
+
+
 @end

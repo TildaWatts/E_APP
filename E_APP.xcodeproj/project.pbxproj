@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8EBDD0F4404D69D3A6758999 /* Pods_E_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566BDAF783B727F5384DCBD3 /* Pods_E_APP.framework */; };
+		F7090F501F010E1700C58745 /* TimeChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7090F4F1F010E1600C58745 /* TimeChangeView.m */; };
+		F7090F521F010E1F00C58745 /* TimeChangeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7090F511F010E1F00C58745 /* TimeChangeView.xib */; };
 		F71A57ED1EF3B47900450CC2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57EC1EF3B47900450CC2 /* FirstViewController.m */; };
 		F71A57F21EF3B4A100450CC2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57F11EF3B4A100450CC2 /* SecondViewController.m */; };
 		F71A57F71EF3B4C600450CC2 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A57F61EF3B4C600450CC2 /* ThirdViewController.m */; };
@@ -93,6 +95,9 @@
 		566BDAF783B727F5384DCBD3 /* Pods_E_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A688E3A5BF4273C2ACDC4B6 /* Pods-E_APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-E_APP/Pods-E_APP.release.xcconfig"; sourceTree = "<group>"; };
 		EEE57A665AE4267083E66CD0 /* Pods-E_APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E_APP/Pods-E_APP.debug.xcconfig"; sourceTree = "<group>"; };
+		F7090F4E1F010E1600C58745 /* TimeChangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeChangeView.h; sourceTree = "<group>"; };
+		F7090F4F1F010E1600C58745 /* TimeChangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeChangeView.m; sourceTree = "<group>"; };
+		F7090F511F010E1F00C58745 /* TimeChangeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeChangeView.xib; sourceTree = "<group>"; };
 		F71A57EB1EF3B47900450CC2 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		F71A57EC1EF3B47900450CC2 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		F71A57F01EF3B4A100450CC2 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -433,6 +438,9 @@
 		F76967F41EFA2DDF00A885E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F7090F4E1F010E1600C58745 /* TimeChangeView.h */,
+				F7090F4F1F010E1600C58745 /* TimeChangeView.m */,
+				F7090F511F010E1F00C58745 /* TimeChangeView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -889,6 +897,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F71A580B1EF3D65700450CC2 /* MarketTableViewCell.xib in Resources */,
+				F7090F521F010E1F00C58745 /* TimeChangeView.xib in Resources */,
 				F7BAD70B1EEE365F00E847F4 /* LaunchScreen.storyboard in Resources */,
 				F7BAD7081EEE365F00E847F4 /* Assets.xcassets in Resources */,
 				F75442C91EFBA56400C60410 /* indicators.json in Resources */,
@@ -998,6 +1007,7 @@
 				F7BAD8521EEE3DE000E847F4 /* XRequest.m in Sources */,
 				F75442CB1EFBA56400C60410 /* MACDChartModel.m in Sources */,
 				F71A57F71EF3B4C600450CC2 /* ThirdViewController.m in Sources */,
+				F7090F501F010E1700C58745 /* TimeChangeView.m in Sources */,
 				F7BAD6FD1EEE365F00E847F4 /* main.m in Sources */,
 				F7BAD8461EEE3DE000E847F4 /* CodeZipper.m in Sources */,
 				F7BAD8571EEE3DE000E847F4 /* NSString+Hash.m in Sources */,

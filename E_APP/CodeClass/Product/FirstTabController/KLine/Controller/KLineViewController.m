@@ -40,30 +40,30 @@
                 [self requestFinished:klineItem.data];
 
                 NSLog(@"%@",response.raw_Json);
-
-                
             }break;
             default:
                 break;
         }
     }
-
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    double now = [[NSDate date] timeIntervalSince1970];
-    long int time = 1495423050000;
-    [[KLineEngine shareInstance]kLineWithCurrency:@"bts_cny" type:@"1min" since:time size:100];
-    
+    [self sendInfoWith:@"15min"];
     [self setupChart]; //初始化K线图
     
 //    [self loadData]; //请求K线图数据
 }
 
-
+- (void)sendInfoWith:(NSString *)moment
+{
+    long int time = 1483251105000;
+    if (self.currency) {
+        [[KLineEngine shareInstance]kLineWithCurrency:self.currency type:moment since:time size:1000];
+    }
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -288,6 +288,8 @@
 
 - (void)requestFinished:(NSArray *)responseObject{
     
+    
+    responseObject = [[responseObject reverseObjectEnumerator]allObjects];
     [self.candleChart reset];
     [self.candleChart clearData];
     [self.candleChart clearCategory];
@@ -306,7 +308,11 @@
 //        [category addObject:dic[@"dateTime"]];
         
         NSArray *dataArr = responseObject[i];
-        [category addObject:dataArr[0]];
+        
+        NSString *timeStr = [NSString stringWithFormat:@"%@",dataArr[0]];
+        NSString *dateTime = [self ConvertStrToTime:timeStr];
+
+        [category addObject:dateTime];
 
         
         
@@ -314,12 +320,10 @@
         if (i + 1 < responseObject.count) {
             preClose = responseObject[i+1][4];
 //            preClose = [responseObject[i+1] valueForKey:@"closePri"];
-
         }
         
         //开盘价、收盘价、最高价、最低价、成交量、时间
 //        NSArray *item = @[dic[@"openPri"],dic[@"closePri"],dic[@"todayMax"],dic[@"todayMin"],dic[@"traNumber"],dic[@"dateTime"],preClose];
-        NSString *dateTime = [self ConvertStrToTime:dataArr[0]];
         //0-时间、1-开盘价、2-最高价、3-最低价、4-收盘价、5-成交量
         NSArray *item = @[dataArr[1],dataArr[4],dataArr[2],dataArr[3],dataArr[5],dateTime,preClose];
 
@@ -338,13 +342,13 @@
     
     [self.candleChart setNeedsDisplay];
 }
-- (NSString *)ConvertStrToTime:(long int)times
+- (NSString *)ConvertStrToTime:(NSString *)times
 
 {
     
-    long long time=times/1000;
+//    long long time=(long long)times/1000;
     //    如果服务器返回的是13位字符串，需要除以1000，否则显示不正确(13位其实代表的是毫秒，需要除以1000)
-    //    long long time=[timeStr longLongValue] / 1000;
+        long long time=[times longLongValue] / 1000;
     
     NSDate *date = [[NSDate alloc]initWithTimeIntervalSince1970:time];
     

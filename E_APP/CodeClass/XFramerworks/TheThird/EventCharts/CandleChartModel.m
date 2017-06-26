@@ -171,7 +171,6 @@
                 CGContextStrokePath(context);
 
             }
-            
         }
     }
     
