@@ -11,6 +11,8 @@
 #import "Chart.h"
 #import "KLineItem.h"
 #import "AppDelegate.h"
+#import "TimeChangeView.h"
+
 
 @interface KLineViewController ()<EventListener>
 
@@ -96,8 +98,6 @@
 }
 
 
-
-
 #pragma mark - Chart Action
 - (void)setupChart{
     
@@ -113,6 +113,15 @@
     [dismissBtn addTarget:self action:@selector(dismissBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.candleChart addSubview:dismissBtn];
     
+    
+    TimeChangeView *timeCView = [TimeChangeView viewFromXib];
+//    [self.view addSubview:timeCView];
+//    [timeCView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(20);
+//        make.bottom.mas_equalTo(0);
+//        make.height.mas_equalTo(20);
+//        make.width.mas_equalTo(kScreenWidth);
+//    }];
     
     //init chart
     [self initKChart];

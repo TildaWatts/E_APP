@@ -85,6 +85,7 @@
                 NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
                 style.alignment = NSTextAlignmentRight;
                 
+                //上半部分左侧动态文字
                 NSDictionary *attributes = @{NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:kYFontSize],NSParagraphStyleAttributeName:style};
                 CGSize textSize = [text sizeWithAttributes:attributes];
                 CGRect rect = CGRectMake(sec.paddingLeft + sec.frame.origin.x - textSize.width - 2, chart.touchY - textSize.height/2.0, textSize.width + 1, textSize.height);

@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface TimeChangeView : UIView
-@property (weak, nonatomic) IBOutlet UIButton *dayK;
 
+
+@property (weak, nonatomic) IBOutlet UIButton *dayK;
 @property (weak, nonatomic) IBOutlet UIButton *fiveMinK;
 @property (weak, nonatomic) IBOutlet UIButton *fifMinK;
 @property (weak, nonatomic) IBOutlet UIButton *oneHourK;
 @property (weak, nonatomic) IBOutlet UIButton *sixHoursK;
 @property (weak, nonatomic) IBOutlet UIButton *otherK;
+
 
 @end
