@@ -95,12 +95,12 @@
         style.alignment = NSTextAlignmentLeft;
         
         if (![fromDate isEqualToString:@"0000-00-00"]) {
-            [fromDate drawInRect:CGRectMake(sec.frame.origin.x + sec.paddingLeft, sec.frame.origin.y + sec.frame.size.height + 2, 100, kYFontSize*2) withAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:kYFontSize],NSParagraphStyleAttributeName:style,NSForegroundColorAttributeName:kYFontColor}];
+            [fromDate drawInRect:CGRectMake(sec.frame.origin.x + sec.paddingLeft, sec.frame.origin.y , 100, kYFontSize*2) withAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:kYFontSize],NSParagraphStyleAttributeName:style,NSForegroundColorAttributeName:kYFontColor}];
         }
         
         style.alignment = NSTextAlignmentRight;
         if (![toDate isEqualToString:@"0000-00-00"]) {
-            [toDate drawInRect:CGRectMake(sec.frame.origin.x + sec.frame.size.width - 100, sec.frame.origin.y + sec.frame.size.height + 2, 100, kYFontSize*2) withAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:kYFontSize],NSParagraphStyleAttributeName:style,NSForegroundColorAttributeName:kYFontColor}];
+            [toDate drawInRect:CGRectMake(sec.frame.origin.x + sec.frame.size.width - 100, sec.frame.origin.y , 100, kYFontSize*2) withAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:kYFontSize],NSParagraphStyleAttributeName:style,NSForegroundColorAttributeName:kYFontColor}];
         }
     }
     

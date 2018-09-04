@@ -52,6 +52,9 @@ static  KLineEngine * _instance = nil;
 
     
 }
-
+- (void)onFail:(XRequest *)request response:(XResponse *)response
+{
+    
+}
 
 @end

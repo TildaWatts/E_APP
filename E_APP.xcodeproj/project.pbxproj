@@ -34,6 +34,7 @@
 		F76967F61EFA2DDF00A885E5 /* KLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76967F31EFA2DDF00A885E5 /* KLineViewController.m */; };
 		F76967F91EFA2E0A00A885E5 /* KLineEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F76967F81EFA2E0A00A885E5 /* KLineEngine.m */; };
 		F76967FC1EFA529900A885E5 /* KLineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F76967FB1EFA529900A885E5 /* KLineItem.m */; };
+		F7B444D81FD63ED100F6B410 /* EWifiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B444D71FD63ED100F6B410 /* EWifiModel.m */; };
 		F7BAD6FD1EEE365F00E847F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD6FC1EEE365F00E847F4 /* main.m */; };
 		F7BAD7081EEE365F00E847F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BAD7071EEE365F00E847F4 /* Assets.xcassets */; };
 		F7BAD70B1EEE365F00E847F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BAD7091EEE365F00E847F4 /* LaunchScreen.storyboard */; };
@@ -144,6 +145,8 @@
 		F76967F81EFA2E0A00A885E5 /* KLineEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLineEngine.m; sourceTree = "<group>"; };
 		F76967FA1EFA529900A885E5 /* KLineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLineItem.h; sourceTree = "<group>"; };
 		F76967FB1EFA529900A885E5 /* KLineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLineItem.m; sourceTree = "<group>"; };
+		F7B444D61FD63ED100F6B410 /* EWifiModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EWifiModel.h; sourceTree = "<group>"; };
+		F7B444D71FD63ED100F6B410 /* EWifiModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EWifiModel.m; sourceTree = "<group>"; };
 		F7BAD6F81EEE365F00E847F4 /* E_APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BAD6FC1EEE365F00E847F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7BAD7071EEE365F00E847F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -450,6 +453,15 @@
 			children = (
 				F76967FA1EFA529900A885E5 /* KLineItem.h */,
 				F76967FB1EFA529900A885E5 /* KLineItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7B444D51FD63E9F00F6B410 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7B444D61FD63ED100F6B410 /* EWifiModel.h */,
+				F7B444D71FD63ED100F6B410 /* EWifiModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -812,6 +824,7 @@
 			children = (
 				F71A57EF1EF3B4A100450CC2 /* Controller */,
 				F71A57EE1EF3B4A100450CC2 /* View */,
+				F7B444D51FD63E9F00F6B410 /* Model */,
 			);
 			path = SecondTabController;
 			sourceTree = "<group>";
@@ -868,7 +881,7 @@
 				TargetAttributes = {
 					F7BAD6F71EEE365F00E847F4 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = SX2JL8WU5A;
+						DevelopmentTeam = 7ZYT6MW27L;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -996,6 +1009,7 @@
 				F7BAD8A11EEE66EC00E847F4 /* WebViewUtil.m in Sources */,
 				F71A57FC1EF3B4E800450CC2 /* FourthViewController.m in Sources */,
 				F7BAD8591EEE3DE000E847F4 /* UIView+CWExtension.m in Sources */,
+				F7B444D81FD63ED100F6B410 /* EWifiModel.m in Sources */,
 				F7BAD8631EEE3DE000E847F4 /* KeyChainStore.m in Sources */,
 				F75442C81EFBA56400C60410 /* ColumnChartModel.m in Sources */,
 				F71A58061EF3B8E500450CC2 /* XSocketEngine.m in Sources */,
@@ -1144,13 +1158,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = SX2JL8WU5A;
+				DEVELOPMENT_TEAM = 7ZYT6MW27L;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/E_APP/CodeClass/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = E_APP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ezra.E-APP";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ezra.E-APPs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1161,13 +1175,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = SX2JL8WU5A;
+				DEVELOPMENT_TEAM = 7ZYT6MW27L;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/E_APP/CodeClass/Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = E_APP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ezra.E-APP";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ezra.E-APPs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

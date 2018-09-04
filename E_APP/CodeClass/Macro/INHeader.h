@@ -79,7 +79,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import <fishhook/fishhook.h>
+#import "Reachability.h"
 // 用户相关类
 #import "ConstantHeader.h"
 
